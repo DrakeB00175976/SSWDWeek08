@@ -31,6 +31,11 @@ class Team {
         " Games: " . $this->totalGames .
         " Goals: " . $this->totalGoals;
     }
+    public function getGoalAverage():
+    float {
+        return $this->totalGoals /
+     $this->totalGames;
+    }
 
 }
 
